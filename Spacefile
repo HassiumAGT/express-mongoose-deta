@@ -9,3 +9,11 @@ micros:
     dev: node index.js
     public_routes:
       - "/*"
+    presets:
+      env:
+        - name: MONGO_URL
+          description: Mongo URL
+          default: "MONGOURLHERE"
+        - name: NODE_ENV
+          description: Node Environment
+          default: "production"
